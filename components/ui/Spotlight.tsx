@@ -1,11 +1,17 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 
+// Type definition for the SpotLight component props
 type SpotlightProps = {
-    className?: string;
-    fill?: string;
+    className?: string;  // Optional additional class names
+    fill?: string;       // Optional fill color for the spotlight ellipse
 };
 
+/**
+ * Spotlight is an animated SVG-based visual effect
+ * It renders a large blurred elliptical light shape, typically used as a background highlight.
+ * The component is absolutely positioned and styled to animate in, usually paired with scroll or hover effects
+ */
 export const Spotlight = ({ className, fill }: SpotlightProps) => {
     return (
         <svg
@@ -18,6 +24,7 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
             fill="none"
         >
             <g filter="url(#filter)">
+                {/* Elliptical shape that gets blurred by the defined filter */}
                 <ellipse
                     cx="1924.71"
                     cy="273.501"
@@ -28,6 +35,7 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
                     fillOpacity="0.21"
                 ></ellipse>
             </g>
+            {/* SVG filter definitions */}
             <defs>
                 <filter
                     id="filter"
@@ -38,13 +46,16 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
                     filterUnits="userSpaceOnUse"
                     colorInterpolationFilters="sRGB"
                 >
+                    {/* Clear the background to ensure only the spotlight is rendered*/}
                     <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
+                    {/* Blend original shape with background (no visible change here, just necessary setup */}
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
                         in2="BackgroundImageFix"
                         result="shape"
                     ></feBlend>
+                    {/* Apply a strong blur to create a glowing spotlight effect */}
                     <feGaussianBlur
                         stdDeviation="151"
                         result="effect1_foregroundBlur_1065_8"
