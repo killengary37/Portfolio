@@ -60,6 +60,7 @@ const RecentProjects = () => {
                                     ))}
                                 </div>
 
+
                                 {/* Live site link with arrow icon */}
                                 <div className="flex justify-center items-center">
                                     <p className="flex lg:text-xl md:text-xs text-sm text-purple-300">Check Out Live Site</p>

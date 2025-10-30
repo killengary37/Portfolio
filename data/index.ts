@@ -72,17 +72,19 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "CodeSolve",
-        des: "An AI-powered platform for developers and tech enthusiasts",
-        img: "/p9.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        link: "",
+        title: "EquiTrade",
+        des: "Stock Market App built with Next.js, Better Auth and Inngest",
+        img: "/EquiTrade.png",
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "", "/fm.svg"],
+        link: "equitrade-stock-app.vercel.app",
+
+
     },
     {
         id: 2,
         title: "AI-Ventures",
         des: "A Travel Platform that uses AI-Gemini to generate the perfect trip for you",
-        img: "/p5.svg",
+        img: "/AI_ventures.png",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
         link: "https://aiventures-azure.vercel.app/",
     },
@@ -90,15 +92,15 @@ export const projects = [
         id: 3,
         title: "GTA VI",
         des: "Grand Theft Auto Promo Page using GSAP",
-        img: "/GTA.png",
+        img: "/gta_thumbnail.png",
         iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
         link: "https://gmk-gta-landing.vercel.app/",
     },
     {
         id: 4,
-        title: "Cosmopolitan",
+        title: "Apple MacBook",
         des: "Upscale Restaurant and Bar Home Page Using GSAP",
-        img: "/Cosmo.png",
+        img: "/gsap_thumbnail.png",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
         link: "https://cosmopolitan-zeta.vercel.app/",
     },
@@ -109,30 +111,35 @@ export const testimonials = [
         quote:
             "It was a pleasure working with Gary! He’s responsive, driven, and truly excited about what he builds. That kind of energy is contagious — and exactly what you want in a collaborator. I’d recommend him to anyone wanting to enhance their brand online.",
         name: "Natalie Grant",
+        title: "Product Designer"
 
     },
     {
         quote:
             "Working with Gary was a true pleasure! He’s prompt, professional, and genuinely passionate about his craft. You can feel his energy in everything he does. If you’re ready to take your website and brand to the next level, Gary’s the one to work with.",
         name: "Samantha James",
+        title:"Creative Director"
 
     },
     {
         quote:
             "Gary brought professionalism, speed, and incredible attention to detail to our project. His enthusiasm for development is unmatched. If you want a site that reflects your brand at its best, Gary is the one to call.",
         name: "Thomas Reed",
+        title:"Front-End Engineer"
 
     },
     {
         quote:
             "From start to finish, Gary delivered with clarity, care, and creativity. His dedication and passion made a real impact. For any business looking to upgrade their digital presence, Gary is a game-changer.",
         name: "Cameron Wells",
+        title:"Project Manager"
 
     },
     {
         quote:
             "Collaborating with Gary was an outstanding experience. His professionalism, reliability, and unwavering commitment to excellence were clear from day one. Gary’s passion for every aspect of development truly sets him apart. If you're looking to elevate your website and strengthen your brand, Gary is the ideal partner.",
         name: "Emily Parker",
+        title:"UI/UX Designer"
 
     },
 ];
@@ -192,13 +199,7 @@ export const workExperience = [
         className: "md:col-span-2", // change to md:col-span-2
         thumbnail: "/exp3.svg",
     },
-    {
-        id: 4,
-        title: "",
-        desc: "",
-        className: "",
-        thumbnail: "/exp4.svg",
-    },
+
 ];
 
 export const socialMedia = [
