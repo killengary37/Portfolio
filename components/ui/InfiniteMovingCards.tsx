@@ -59,6 +59,8 @@ export const InfiniteMovingCards = ({
             setStart(true);     // Start animation
         }
     }
+
+
     // Set scroll direction using a custom CSS property
     const getDirection = () => {
         if (containerRef.current) {

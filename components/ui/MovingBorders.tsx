@@ -6,7 +6,7 @@ import {
     useMotionTemplate,
     useMotionValue,
     useTransform,
-} from "motion/react";
+} from "framer-motion";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
@@ -19,6 +19,7 @@ import { cn } from "@/lib/utils";
  * @param borderClassName - Additional classes for the animated border layer
  * @param duration - Duration (ms) for border animation loop
  * @param className
+ * @param otherProps
  */
 export function Button({
                            borderRadius = "1.75rem",
@@ -37,7 +38,7 @@ export function Button({
     borderClassName?: string;
     duration?: number;
     className?: string;
-    [key: string]: any;
+    [key: string]: unknown;
 }) {
     return (
         <Component
@@ -81,12 +82,14 @@ export function Button({
     );
 }
 
+// @ts-ignore
 /**
  * Component that creates a moving glowing element that follows a rectangular SVG path
  * @param children - The animated visual element (e.g., glowing dot
  * @param duration - How long one loop around the border should take  (in ms)
  * @param rx - Horizontal border radius for the SVG path
  * @param ry - Vertical border radius for the SVG path
+ * @param otherProps
  */
 export const MovingBorder = ({
                                  children,
@@ -99,6 +102,7 @@ export const MovingBorder = ({
     duration?: number;
     rx?: string;
     ry?: string;
+    // @ts-ignore
     [key: string]: any;
 }) => {
     // @ts-ignore

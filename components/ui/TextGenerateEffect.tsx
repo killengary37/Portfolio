@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "motion/react";
+import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 /**
@@ -29,22 +29,22 @@ export const TextGenerateEffect = ({
     // Animation hook from Motion One: returns ref (scope) and animate function
     const [scope, animate] = useAnimate();
     // Split the incoming string into individual words
-    let wordsArray = words.split(" ");
+    const wordsArray = words.split(" ");
 
     // Animate each <span> inside the component when it mounts
     useEffect(() => {
         animate(
             "span",  // Target all span elements inside the scope
             {
-                opacity: 3,
+                opacity: 1,
                 filter: filter ? "blur(0px)" : "none",
             },
             {
                 duration: duration ? duration : 1,
-                delay: stagger(0.11),  // Stagger each word by 0.11s
+                delay: stagger(0.05),  // Stagger each word by 0.05s
             }
         );
-    }, [scope.current]);
+    }, [animate, duration, filter]);
 
     /**
      * Renders each word as a separate <motion.span> to allow staggered animation
@@ -58,7 +58,7 @@ export const TextGenerateEffect = ({
                         <motion.span
                             key={word + idx}
                             className={`${
-                                idx > 4 ? "text-purple-400" : "dark:text-white text-black"
+                                idx > 3 ? "text-purple-400" : "dark:text-white text-black"
                             } opacity-0`}
                             style={{
                                 filter: filter ? "blur(10px)" : "none",

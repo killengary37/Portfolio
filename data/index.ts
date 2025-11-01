@@ -76,7 +76,7 @@ export const projects = [
         des: "Stock Market App built with Next.js, Better Auth and Inngest",
         img: "/EquiTrade.png",
         iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "", "/fm.svg"],
-        link: "equitrade-stock-app.vercel.app",
+        link: "https://equitrade-stock-app.vercel.app",
 
 
     },
@@ -102,7 +102,7 @@ export const projects = [
         des: "Upscale Restaurant and Bar Home Page Using GSAP",
         img: "/gsap_thumbnail.png",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        link: "https://cosmopolitan-zeta.vercel.app/",
+        link: "https://macbook-gsap-delta.vercel.app/",
     },
 ];
 

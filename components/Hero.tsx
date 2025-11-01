@@ -50,7 +50,7 @@ const Hero = () => {
                         {/* Animated headline text */}
                         <TextGenerateEffect
                             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-                            words="Designing Tomorrow’s Experiences from Today’s Ideas"
+                            words="Imagining Tomorrow through Today’s Innovation"
                         />
 
                         <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
