@@ -86,7 +86,7 @@ export const projects = [
         des: "A Travel Platform that uses AI-Gemini to generate the perfect trip for you",
         img: "/AI_ventures.png",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-        link: "https://aiventures-azure.vercel.app/",
+        link: "https://ai-venturers.vercel.app/",
     },
     {
         id: 3,
@@ -99,7 +99,7 @@ export const projects = [
     {
         id: 4,
         title: "Apple MacBook",
-        des: "Upscale Restaurant and Bar Home Page Using GSAP",
+        des: "Macbook advertisement using Vite, GSAP and Three.js",
         img: "/gsap_thumbnail.png",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
         link: "https://macbook-gsap-delta.vercel.app/",
@@ -216,3 +216,26 @@ export const socialMedia = [
         img: "/link.svg",
     },
 ];
+
+export const githubLinks =[
+    {
+        id: 1,
+        title: "Equitrade",
+        link: "github.com/killengary37/equitrade_stock_app",
+    },
+    {
+        id: 2,
+        title: "AI-Venturers",
+        link: "github.com/killengary37/ai-venturers",
+    },
+    {
+        id: 3,
+        title: "GTA",
+        link: "github.com/killengary37/gta_gsap",
+    },
+    {
+        id: 4,
+        title: "Apple MacBook",
+        link: "github.com/killengary37/macbook_gsap",
+    }
+]

@@ -2,13 +2,15 @@
 
 import React from 'react'
 import { PinContainer } from './ui/3d-pin';
-import {projects} from '@/data/';
+import {projects, githubLinks} from '@/data/';
 import {FaLocationArrow} from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 /**
  * RecentProjections Section
  * Displays a curated list of recent development projects using a 3d hover effect
  * Each project includes a title, description, technology stack icons, and a live site link
+ * Also displays GitHub repository links in an evenly spaced row below the projects
  */
 
 const RecentProjects = () => {
@@ -71,6 +73,25 @@ const RecentProjects = () => {
 
                     </div>
                 ))}
+            </div>
+
+            {/* GitHub Links Section */}
+            <div className="mt-16">
+                <h2 className="text-center text-2xl font-semibold mb-8 text-blue-400">GitHub Repositories</h2>
+                <div className="flex flex-wrap justify-center gap-6">
+                    {githubLinks.map(({id, title, link}) => (
+                        <a 
+                            key={id} 
+                            href={`https://${link}`} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 bg-[#13162d] px-4 py-3 rounded-lg hover:bg-blue-400/30 transition-colors"
+                        >
+                            <FaGithub className="text-xl" />
+                            <span>{title}</span>
+                        </a>
+                    ))}
+                </div>
             </div>
         </div>
     )
